@@ -1,0 +1,226 @@
+Documento de Requisitos de Software (DRS)
+1. Identificação do Projeto
+
+Nome do projeto: Meu Plano
+
+Descrição:
+
+O Meu Plano é uma aplicação web que auxilia usuários a tomarem decisões pessoais através da criação de planos personalizados. O usuário informa uma situação ou objetivo, responde perguntas relacionadas e recebe uma análise contendo recomendações, riscos, próximos passos e um plano de ação.
+
+2. Objetivo do Sistema
+
+O objetivo do sistema é transformar problemas ou decisões complexas do cotidiano em planos organizados e fáceis de seguir.
+
+Exemplos:
+
+Planejar morar sozinho.
+Organizar uma mudança.
+Controlar uma decisão financeira.
+Planejar uma transição profissional.
+3. Público-alvo
+
+O sistema é destinado a pessoas que:
+
+possuem dificuldade em organizar decisões importantes;
+precisam de orientação inicial;
+querem visualizar consequências antes de tomar decisões;
+buscam um planejamento simples e personalizado.
+4. Escopo do Sistema
+Dentro do escopo:
+
+O sistema permitirá:
+
+Cadastro de usuários.
+Escolha de uma situação/problema.
+Preenchimento de questionário personalizado.
+Geração de um plano personalizado.
+Visualização de recomendações.
+Acompanhamento de tarefas.
+Fora do escopo:
+
+O sistema não irá:
+
+substituir profissionais especializados;
+tomar decisões pelo usuário;
+oferecer aconselhamento jurídico, médico ou financeiro oficial;
+executar ações externas em nome do usuário.
+5. Requisitos Funcionais
+RF01 - Cadastro de usuário
+
+Descrição:
+
+O sistema deverá permitir que o usuário crie uma conta.
+
+Entrada:
+
+Nome;
+Email;
+Senha.
+
+Saída:
+
+Conta criada com sucesso.
+RF02 - Seleção de objetivo
+
+Descrição:
+
+O sistema deverá permitir que o usuário escolha uma situação que deseja planejar.
+
+Exemplos:
+
+Morar sozinho;
+Comprar um produto;
+Organizar finanças;
+Trocar de emprego.
+RF03 - Questionário personalizado
+
+Descrição:
+
+O sistema deverá apresentar perguntas relacionadas ao objetivo escolhido.
+
+Exemplo:
+
+Objetivo:
+"Morar sozinho"
+
+Perguntas:
+
+Qual sua renda mensal?
+Quanto possui guardado?
+Qual valor do aluguel?
+Você possui dívidas?
+RF04 - Geração de plano
+
+Descrição:
+
+O sistema deverá gerar uma resposta personalizada contendo:
+
+análise da situação;
+pontos positivos;
+riscos;
+recomendações;
+checklist de ações.
+RF05 - Visualização do plano
+
+O usuário deverá conseguir visualizar:
+
+resumo da situação;
+progresso;
+tarefas pendentes;
+recomendações.
+RF06 - Gerenciamento de tarefas
+
+O usuário poderá:
+
+marcar tarefas como concluídas;
+remover tarefas;
+acompanhar progresso.
+6. Requisitos Não Funcionais
+RNF01 - Usabilidade
+
+O sistema deve possuir uma interface simples e intuitiva.
+
+RNF02 - Responsividade
+
+O sistema deve funcionar em:
+
+computadores;
+tablets;
+smartphones.
+RNF03 - Desempenho
+
+O carregamento das páginas deve ocorrer rapidamente em conexões comuns.
+
+RNF04 - Segurança
+
+O sistema deve proteger informações pessoais dos usuários.
+
+7. Regras de Negócio
+RN01
+
+O sistema deverá solicitar informações diferentes dependendo do objetivo escolhido.
+
+RN02
+
+O plano gerado deverá considerar os dados informados pelo usuário.
+
+RN03
+
+O sistema deverá apresentar alertas quando identificar situações de risco.
+
+Exemplo:
+
+Entrada:
+
+Renda: R$ 2.000
+Aluguel: R$ 1.500
+
+Resultado:
+
+Atenção:
+O aluguel representa uma grande parte da sua renda.
+8. Casos de Uso
+Caso de Uso 01 - Criar plano personalizado
+
+Ator: Usuário
+
+Fluxo principal:
+
+Usuário acessa o site.
+Escolhe um objetivo.
+Responde perguntas.
+Sistema processa informações.
+Sistema apresenta plano personalizado.
+Caso de Uso 02 - Acompanhar progresso
+
+Ator: Usuário
+
+Fluxo:
+
+Usuário acessa seu plano.
+Visualiza tarefas.
+Marca uma tarefa como concluída.
+Sistema atualiza progresso.
+9. Tecnologias
+Front-end:
+HTML5
+CSS3
+JavaScript
+Back-end (opcional):
+Node.js
+Banco de dados:
+Firebase / LocalStorage
+Inteligência Artificial:
+API de modelo de linguagem para geração dos planos.
+10. Interface do Sistema
+Tela inicial
+
+Elementos:
+
+Logo;
+Explicação do sistema;
+Botão "Criar meu plano".
+Tela de questionário
+
+Elementos:
+
+Perguntas;
+Campos de resposta;
+Botão continuar.
+Tela de resultado
+
+Elementos:
+
+Diagnóstico;
+Plano de ação;
+Checklist;
+Barra de progresso.
+11. Critérios de Aceitação
+
+O sistema será considerado aprovado quando:
+
+✅ Usuário conseguir escolher um objetivo.
+✅ Usuário conseguir responder perguntas.
+✅ Sistema gerar um plano personalizado.
+✅ Usuário conseguir visualizar tarefas.
+✅ Usuário conseguir acompanhar progresso.
